@@ -1,0 +1,31 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          set-safe-directory: true
+          show-progress: true
+          persist-credentials: false
+          submodules: false
+      - name: Install and Build
+        run: |
+          npm install
+          npm run lint
+          npm run test
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          force: true
+          clean: true
+          branch: build

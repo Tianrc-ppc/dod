@@ -1,0 +1,61 @@
+{
+  "name": "doddle-jump",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "vite serve",
+    "build": "vite build",
+    "lint": "echo for later use",
+    "test": "echo for later use",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/kalam": "^5.0.8",
+    "@fontsource/satisfy": "^5.0.17",
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/control_utils": "^0.6.1675466023",
+    "@mediapipe/tasks-vision": "^0.10.8",
+    "moment": "^2.29.4",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.0",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vicons/material": "^0.12.0",
+    "@vicons/utils": "^0.1.4",
+    "@vitejs/plugin-vue": "^4.4.1",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.18.1",
+    "naive-ui": "^2.35.0",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "vfonts": "^0.0.3",
+    "vite": "^4.4.5",
+    "vite-plugin-static-copy": "^0.17.0",
+    "vue-eslint-parser": "^9.3.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:vue/vue3-recommended",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "endOfLine": "auto"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
